@@ -1,8 +1,9 @@
 import Image from "next/image";
 import profile from "@/public/profile.jpg";
-import tokokeramik from '@/public/tokokeramik.png';
+import tokokeramik from "@/public/tokokeramik.png";
+import programming from "@/public/survey-programming.png";
 import { SiTypescript, SiRust, SiC, SiPython, SiNeovim } from "react-icons/si";
-import { Experience, IconSkill, Title } from "@/components";
+import { Experience, IconSkill, Project, Title } from "@/components";
 import { FaAws } from "react-icons/fa6";
 
 export default function Home() {
@@ -18,78 +19,60 @@ export default function Home() {
           height={150}
         />
         <h1 className="text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
-        <p className="text-xl text-gray-600/50">Junior Software Engineer with 5 years of experience</p>
+        <p className="text-xl text-gray-600/60">Junior Software Engineer with 5 years of experience</p>
+      </div>
+
+      <div>
+        <Title name="About" />
+        <p className="text-gray-600">Saya memiliki pengalaman dalam pengembangan perangkat lunak dan manajemen operasional. Menguasai beberapa bahasa pemrograman, saya telah memimpin tim untuk mencapai tujuan perusahaan. Saya juga membantu lebih dari 40 toko keramik di Indonesia memasarkan produk secara online dan meningkatkan omset. Dengan keahlian dalam negosiasi, saya pernah menjadi Sales Consultant terbaik beberapa bulan berturut-turut. Saya siap berkontribusi pada kesuksesan perusahaan.</p>
       </div>
 
       {/* Skills Section */}
       <section className="mt-12">
         <Title name="Tools" />
         <div className="md:flex md:justify-between grid grid-cols-3 gap-3">
-          <IconSkill name="Typescript" icon={<SiTypescript />} />
-          <IconSkill name="Rust" icon={<SiRust />} />
-          <IconSkill name="C" icon={<SiC />} />
-          <IconSkill name="Python" icon={<SiPython />} />
-          <IconSkill name="AWS" icon={<FaAws />} />
-          <IconSkill name="NeoVim" icon={<SiNeovim />} />
+          <IconSkill name="Typescript" icon={<SiTypescript />} style="hover:text-[#3178c6]" />
+          <IconSkill name="Rust" icon={<SiRust />} style="hover:text-[#b7410e]" />
+          <IconSkill name="C" icon={<SiC />} style="hover:text-[#045c9b]" />
+          <IconSkill name="Python" icon={<SiPython />} style="hover:text-[#fce058]" />
+          <IconSkill name="AWS" icon={<FaAws />} style="hover:text-[#ff9900]" />
+          <IconSkill name="NeoVim" icon={<SiNeovim />} style="hover:text-[#6ba951]" />
         </div>
       </section>
 
       {/* Projects Section */}
       <section className="mt-12">
-        <Title name="Impactful projects" />
-        <div className="bg-white mb-8 p-2 border rounded">
-          <div className="md:flex gap-3 p-4">
-            {/* Image Section */}
-            <div className="md:w-1/3 flex justify-center mb-2 md:block">
-              <Image
-                src={tokokeramik}
-                alt="Tokokeramik"
-                className="rounded"
-                width={400}
-                height={400}
-              />
-            </div>
+        <Title name="Impactful Projects" />
+        <Project
+          title="Toko Keramik Indonesia"
+          href="https://www.tokokeramik.com"
+          imageSrc={tokokeramik}
+          description="Tokokeramik Indonesia adalah sebuah platform yang memudahkan pemilik toko keramik untuk menjual barang secara online dan semuanya gratis"
+          technology={[
+            "Bahasa pemrograman: Rust dan TypeScript",
+            "Framework: Actix-web dan Next.js",
+            "Platform Cloud: AWS S3, AWS Amplify, Azure VM",
+            "Database: PostgreSQL dan MongoDB"
+          ]}
+          dampak={[
+            "Membantu lebih dari 40 toko keramik di indonesia untuk memasarkan produk secara online",
+            "Berkontribusi untuk industri bahan bangunan yang lebih baik"]} />
+      </section>
 
-            {/* Text Section */}
-            <div className="md:w-2/3 space-y-3">
-              {/* Project Title */}
-              <h3 className="text-xl font-semibold text-gray-600">Tokokeramik Indonesia</h3>
-
-              {/* Website Link */}
-              <a
-                href="https://www.tokokeramik.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                https://www.tokokeramik.com
-              </a>
-
-              {/* Description */}
-              <p className="text-gray-600/80">
-                Tokokeramik Indonesia adalah sebuah platform yang memudahkan pemilik toko keramik untuk menjual barang secara online dan semuanya gratis
-              </p>
-
-              <div className="">
-                <h4 className="text-gray-600 font-medium">Keterampilan dan Teknologi:</h4>
-                <ul className="mt-2 list-disc list-inside text-gray-600/80">
-                  <li>Bahasa pemrograman: Rust dan TypeScript</li>
-                  <li>Framework: Actix-web dan Next.js</li>
-                  <li>Platform Cloud: AWS S3, AWS Amplify, Azure VM</li>
-                  <li>Database: PostgreSQL dan MongoDB</li>
-                </ul>
-              </div>
-
-              <div className="">
-                <h4 className="text-gray-600 font-medium">Dampak dan Kontribusi</h4>
-                <ul className="mt-2 list-disc list-inside text-gray-600/80">
-                  <li>Membantu lebih dari 40 toko keramik di indonesia untuk memasarkan produk secara online</li>
-                  <li>Berkontribusi untuk industri bahan bangunan yang lebih baik</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section className="mt-12">
+        <Title name="Fun Projects" />
+        <Project
+          title="Survey Bahasa Pemrograman"
+          href="https://main.dns66h5rapcke.amplifyapp.com/"
+          imageSrc={programming}
+          description="Akhir-akhir ini, banyak YouTuber dan influencer di dunia coding yang berbagi pendapat tentang bahasa pemrograman yang mereka kurang sukai. Untuk itu, saya membuat proyek sederhana ini untuk mengetahui mana bahasa pemrograman yang paling banyak disukai dan mana yang paling jarang diminati."
+          technology={[
+            "Bahasa pemrograman: Python dan Typescript",
+            "Framework: Next.js (frontend)",
+            "Platform Cloud: AWS Lambda, AWS Api Gateway, AWS Amplify",
+            "Database: Supabase"
+          ]}
+          dampak={[]} />
       </section>
 
       {/* Experience Section */}
@@ -103,7 +86,7 @@ export default function Home() {
             endYear="2023"
             description="Saya memimpin tim untuk bekerja sama mencapi tujuan perusahaan dalam operasional dan pencapaian omset setiap bulannya. "
             keterampilan={["Leadership", "Team Management", "Komunikasi atau Public Speaking"]}
-            dampak={["Mencapai omset bulanan yang harus lebih tinggi dari bulan ke bulan", "Mengurangi keselisihan stok untuk kebanyakan skuSaya"]} />
+            dampak={["Mencapai omset bulanan yang harus lebih tinggi dari bulan ke bulan", "Mengurangi keselisihan stok untuk kebanyakan sku"]} />
           <Experience
             role="Web Developer"
             companyName="CV Borneo Corner"
@@ -121,6 +104,10 @@ export default function Home() {
             keterampilan={["Negosiasi", "Komunikasi", "Pemahaman produk yang sangat kuat"]}
             dampak={["Menjadi Sales Consultant terbaik dalam beberapa bulan berturut turut dengan pencapaian omset dan quantity terbanyak."]} />
         </div>
+      </section>
+
+      <section className="text-center mt-10">
+        <p className="text-gray-600/50 text-sm">Dibuat oleh Saya Sendiri</p>
       </section>
     </div>
   );

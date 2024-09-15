@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { GoLinkExternal } from "react-icons/go";
 
 interface IProps {
   title: string,
@@ -35,15 +36,15 @@ export default function Project({ title, imageSrc, href, description, technology
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 hover:underline flex items-center"
           >
-            {href}
+            Kunjungi <GoLinkExternal className="ml-1" />
           </Link>
 
           {/* Description */}
           <p className="text-gray-600/80 prose">{description}</p>
 
-          <div className="">
+          <div>
             <h4 className="text-gray-600 font-medium">Keterampilan dan Teknologi:</h4>
             <ul className="mt-2 list-disc list-inside text-gray-600/80">
               {technology.map((v) => (
@@ -53,7 +54,7 @@ export default function Project({ title, imageSrc, href, description, technology
           </div>
 
           {dampak.length > 0 ? (
-            <div className="">
+            <div>
               <h4 className="text-gray-600 font-medium">Dampak dan Kontribusi</h4>
               <ul className="mt-2 list-disc list-inside text-gray-600/80">
                 {dampak.map((v) => (

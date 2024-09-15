@@ -8,7 +8,7 @@ import { FaAws } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl min-h-screen p-6">
+    <div className="mx-auto max-w-4xl min-h-screen p-6">
       {/* Header Section */}
       <div className="text-center">
         <Image
@@ -18,13 +18,13 @@ export default function Home() {
           width={150}
           height={150}
         />
-        <h1 className="text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
-        <p className="text-xl text-gray-600/60">Junior Software Engineer with 5 years of experience</p>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
+        <p className="text-md md:text-lg lg:text-xl text-gray-600/80">Junior Software Engineer with 4 years of experience</p>
       </div>
 
-      <div>
+      <div className="mt-12">
         <Title name="About" />
-        <p className="text-gray-600">Saya memiliki pengalaman dalam pengembangan perangkat lunak dan manajemen operasional. Menguasai beberapa bahasa pemrograman, saya telah memimpin tim untuk mencapai tujuan perusahaan. Saya juga membantu lebih dari 40 toko keramik di Indonesia memasarkan produk secara online dan meningkatkan omset. Dengan keahlian dalam negosiasi, saya pernah menjadi Sales Consultant terbaik beberapa bulan berturut-turut. Saya siap berkontribusi pada kesuksesan perusahaan.</p>
+        <p className="text-gray-600/80 prose md:prose-lg lg:prose-xl">Saya memiliki pengalaman dalam pengembangan perangkat lunak dan manajemen operasional. Menguasai beberapa bahasa pemrograman, saya telah memimpin tim untuk mencapai tujuan perusahaan. Saya juga membantu lebih dari 40 toko keramik di Indonesia memasarkan produk secara online dan meningkatkan omset. Dengan keahlian dalam negosiasi, saya mampu menjadi Sales Consultant terbaik beberapa bulan berturut-turut. Saya siap berkontribusi pada kesuksesan perusahaan.</p>
       </div>
 
       {/* Skills Section */}
@@ -34,7 +34,7 @@ export default function Home() {
           <IconSkill name="Typescript" icon={<SiTypescript />} style="hover:text-[#3178c6]" />
           <IconSkill name="Rust" icon={<SiRust />} style="hover:text-[#b7410e]" />
           <IconSkill name="C" icon={<SiC />} style="hover:text-[#045c9b]" />
-          <IconSkill name="Python" icon={<SiPython />} style="hover:text-[#fce058]" />
+          <IconSkill name="Python" icon={<SiPython />} style="hover:text-[#ffde53]" />
           <IconSkill name="AWS" icon={<FaAws />} style="hover:text-[#ff9900]" />
           <IconSkill name="NeoVim" icon={<SiNeovim />} style="hover:text-[#6ba951]" />
         </div>
@@ -47,7 +47,8 @@ export default function Home() {
           title="Toko Keramik Indonesia"
           href="https://www.tokokeramik.com"
           imageSrc={tokokeramik}
-          description="Tokokeramik Indonesia adalah sebuah platform yang memudahkan pemilik toko keramik untuk menjual barang secara online dan semuanya gratis"
+          description="
+          Tokokeramik Indonesia adalah sebuah platform yang memudahkan pemilik toko keramik untuk menjual barang secara online dan semuanya gratis. Saya membuat keseluruhan sistem tokokeramik.com dan saya bertanggung jawab atas pengembangan, logika bisnis dan aplikasi, dan pemeliharaan keseluruhan situs menggunakan berbagai teknologi."
           technology={[
             "Bahasa pemrograman: Rust dan TypeScript",
             "Framework: Actix-web dan Next.js",
@@ -80,7 +81,7 @@ export default function Home() {
         <Title name="Experience" />
         <div className="space-y-4">
           <Experience
-            role="Operations Supervisor"
+            role="Supervisor Operasional"
             companyName="PT Subur Makmur Jaya"
             startYear="2022"
             endYear="2023"

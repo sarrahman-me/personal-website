@@ -13,14 +13,14 @@ interface IProps {
 export default function Project({ title, imageSrc, href, description, technology, dampak }: IProps) {
   return (
     <div className="bg-white mb-8 p-2 border rounded">
-      <div className="md:flex gap-3 p-4">
+      <div className="md:flex gap-3 p-2">
         {/* Image Section */}
         <div className="md:w-1/3 flex justify-center mb-2 md:block">
           <Image
             src={imageSrc}
             alt={title}
             className="rounded"
-            width={400}
+            width={500}
             height={400}
           />
         </div>
@@ -41,7 +41,7 @@ export default function Project({ title, imageSrc, href, description, technology
           </Link>
 
           {/* Description */}
-          <p className="text-gray-600/80">{description}</p>
+          <p className="text-gray-600/80 prose">{description}</p>
 
           <div className="">
             <h4 className="text-gray-600 font-medium">Keterampilan dan Teknologi:</h4>

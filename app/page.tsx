@@ -137,6 +137,10 @@ export default function Home() {
           <IconSkill name="NeoVim" icon={<SiNeovim />} style="hover:text-[#6ba951]" />
         </div>
       </section>
+
+      <section className="text-center mt-10">
+        <p className="text-gray-600/50 text-sm">Dibuat oleh Saya Sendiri</p>
+      </section>
     </div>
   );
 }

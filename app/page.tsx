@@ -115,7 +115,7 @@ export default function Home() {
             endYear="2022"
             description="Saya bertanggung jawab dalam penjualan keramik dan granit langsung kepada pelanggan, dengan menerapkan strategi penjualan yang efektif dan berfokus pada kepuasan pelanggan."
             keterampilan={["Negosiasi", "Komunikasi", "Pemahaman produk yang sangat kuat"]}
-            dampak={["Diakui sebagai Sales Consultant terbaik selama beberapa bulan berturut-turut, dengan pencapaian omset tertinggi dan volume penjualan terbesar."]} />
+            dampak={["Diakui sebagai Sales Consultant terbaik selama beberapa bulan berturut-turut, dengan pencapaian omset tertinggi dan volume penjualan terbesar.", "Membuat beberapa teknologi yang memudahkan dalam opersional dan penjualan"]} />
         </div>
       </section>
 

@@ -26,8 +26,8 @@ export default function Experience({ companyName, role, startYear, endYear, desc
           </ul>
         </div>
       </div>
-      <div>
-        <h4 className="text-gray-600 font-medium">Keterampilan :</h4>
+      <div className="mt-2">
+        <h4 className="text-gray-600 font-medium">Dampak dan Kontribusi :</h4>
         <ul className="mt-2 list-disc list-inside text-gray-600/85">
           {
             dampak.map((v) => (

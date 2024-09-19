@@ -42,11 +42,11 @@ export default function Project({ title, imageSrc, href, description, technology
           </Link>
 
           {/* Description */}
-          <p className="text-gray-600/80 prose">{description}</p>
+          <p className="text-gray-600/85 prose">{description}</p>
 
           <div>
             <h4 className="text-gray-600 font-medium">Keterampilan dan Teknologi:</h4>
-            <ul className="mt-2 list-disc list-inside text-gray-600/80">
+            <ul className="mt-2 list-disc list-inside text-gray-600/85">
               {technology.map((v) => (
                 <li key={v}>{v}</li>
               ))}
@@ -56,7 +56,7 @@ export default function Project({ title, imageSrc, href, description, technology
           {dampak.length > 0 ? (
             <div>
               <h4 className="text-gray-600 font-medium">Dampak dan Kontribusi</h4>
-              <ul className="mt-2 list-disc list-inside text-gray-600/80">
+              <ul className="mt-2 list-disc list-inside text-gray-600/85">
                 {dampak.map((v) => (
                   <li key={v}>{v}</li>
                 ))}

@@ -14,10 +14,10 @@ export default function Experience({ companyName, role, startYear, endYear, desc
       <div className="relative space-y-1">
         <h3 className="text-xl font-semibold text-gray-600">{role} | {companyName}</h3>
         <p className="text-gray-600/75">{startYear} - {endYear}</p>
-        <p className="text-gray-600/80">{description}</p>
+        <p className="text-gray-600/85">{description}</p>
         <div>
           <h4 className="text-gray-600 font-medium">Keterampilan:</h4>
-          <ul className="mt-2 list-disc list-inside text-gray-600/80">
+          <ul className="mt-2 list-disc list-inside text-gray-600/85">
             {
               keterampilan.map((v) => (
                 <li key={v}>{v}</li>
@@ -28,7 +28,7 @@ export default function Experience({ companyName, role, startYear, endYear, desc
       </div>
       <div>
         <h4 className="text-gray-600 font-medium">Keterampilan :</h4>
-        <ul className="mt-2 list-disc list-inside text-gray-600/80">
+        <ul className="mt-2 list-disc list-inside text-gray-600/85">
           {
             dampak.map((v) => (
               <li key={v}>{v}</li>

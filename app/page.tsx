@@ -1,14 +1,14 @@
 import Image from "next/image";
-import profile from "@/public/profile.jpg";
+import profile from "@/public/profile.jpeg";
 import tokokeramik from "@/public/tokokeramik.png";
 import programming from "@/public/survey-programming.png";
-import { SiTypescript, SiRust, SiC, SiPython, SiNeovim } from "react-icons/si";
+import { SiTypescript, SiRust, SiC, SiPython, SiNeovim, SiDocker, SiPostgresql, SiMongodb, SiRedis, SiRabbitmq, SiNodedotjs } from "react-icons/si";
 import { Experience, IconSkill, Project, Title } from "@/components";
 import { FaAws } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-4xl min-h-screen p-6">
+    <div className="mx-auto max-w-4xl min-h-screen p-3 md:p-6">
       {/* Header Section */}
       <div className="text-center">
         <Image
@@ -19,26 +19,13 @@ export default function Home() {
           height={150}
         />
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
-        <p className="text-md md:text-lg lg:text-xl text-gray-600/80">Junior Software Engineer with 4 years of experience</p>
+        <p className="text-md md:text-lg lg:text-xl text-gray-600/85">Supervisor Operations And Technology</p>
       </div>
 
       <div className="mt-12">
         <Title name="About" />
-        <p className="text-gray-600/80 prose md:prose-lg lg:prose-xl">Saya memiliki pengalaman dalam pengembangan perangkat lunak dan manajemen operasional. Menguasai beberapa bahasa pemrograman, saya telah memimpin tim untuk mencapai tujuan perusahaan. Saya juga membantu lebih dari 40 toko keramik di Indonesia memasarkan produk secara online dan meningkatkan omset. Dengan keahlian dalam negosiasi, saya mampu menjadi Sales Consultant terbaik beberapa bulan berturut-turut. Saya siap berkontribusi pada kesuksesan perusahaan.</p>
+        <p className="text-gray-600/85 prose md:prose-lg lg:prose-xl">Saya memiliki pengalaman dalam pengembangan perangkat lunak dan manajemen operasional. Menguasai beberapa teknologi, saya telah memimpin tim untuk mencapai tujuan perusahaan. Saya juga membantu lebih dari 40 toko keramik di Indonesia memasarkan produk secara online dan meningkatkan omset. Dengan keahlian dalam negosiasi, saya mampu menjadi Sales Consultant terbaik beberapa bulan berturut-turut.</p>
       </div>
-
-      {/* Skills Section */}
-      <section className="mt-12">
-        <Title name="Tools" />
-        <div className="md:flex md:justify-between grid grid-cols-3 gap-3">
-          <IconSkill name="Typescript" icon={<SiTypescript />} style="hover:text-[#3178c6]" />
-          <IconSkill name="Rust" icon={<SiRust />} style="hover:text-[#b7410e]" />
-          <IconSkill name="C" icon={<SiC />} style="hover:text-[#045c9b]" />
-          <IconSkill name="Python" icon={<SiPython />} style="hover:text-[#ffde53]" />
-          <IconSkill name="AWS" icon={<FaAws />} style="hover:text-[#ff9900]" />
-          <IconSkill name="NeoVim" icon={<SiNeovim />} style="hover:text-[#6ba951]" />
-        </div>
-      </section>
 
       {/* Projects Section */}
       <section className="mt-12">
@@ -81,34 +68,49 @@ export default function Home() {
         <Title name="Experience" />
         <div className="space-y-4">
           <Experience
-            role="Supervisor Operasional"
+            role="Supervisor Operations"
             companyName="PT Subur Makmur Jaya"
             startYear="2022"
             endYear="2023"
-            description="Saya memimpin tim untuk bekerja sama mencapi tujuan perusahaan dalam operasional dan pencapaian omset setiap bulannya. "
+            description="Saya memimpin tim dengan fokus pada kolaborasi yang efektif untuk mencapai tujuan perusahaan, baik dalam hal operasional maupun pencapaian target omset bulanan, sambil memastikan kualitas kerja yang optimal dan pertumbuhan yang berkelanjutan."
             keterampilan={["Leadership", "Team Management", "Komunikasi atau Public Speaking"]}
-            dampak={["Mencapai omset bulanan yang harus lebih tinggi dari bulan ke bulan", "Mengurangi keselisihan stok untuk kebanyakan sku"]} />
+            dampak={["Meningkatkan omset bulanan secara konsisten dengan pencapaian target yang lebih tinggi setiap bulannya.", "Mengoptimalkan manajemen stok untuk mengurangi ketidaksesuaian pada sebagian besar SKU."]} />
           <Experience
             role="Web Developer"
             companyName="CV Borneo Corner"
             startYear="2022"
             endYear="2022"
-            description="Saya berperan untuk membuat keseluruhan tampilan dashboard admin menggunakan berbagai teknologi."
+            description="Saya bertanggung jawab dalam pengembangan tampilan keseluruhan dashboard admin, memanfaatkan berbagai teknologi untuk menciptakan antarmuka yang fungsional dan menarik."
             keterampilan={["Typescript", "Nextjs", "CSS"]}
-            dampak={["Membuat tampilan dashboard sesuai keinginan client"]} />
+            dampak={["Mengembangkan tampilan dashboard yang disesuaikan dengan kebutuhan dan preferensi klien."]} />
           <Experience
             role="Marketing Specialist"
             companyName="CV Kerajaan Keramik"
             startYear="2018"
             endYear="2022"
-            description="Saya berperan untuk menjual keramik dan granit langsung kepada pelanggan dengan menerapkan teknik mejual yang terbaik."
+            description="Saya bertanggung jawab dalam penjualan keramik dan granit langsung kepada pelanggan, dengan menerapkan strategi penjualan yang efektif dan berfokus pada kepuasan pelanggan."
             keterampilan={["Negosiasi", "Komunikasi", "Pemahaman produk yang sangat kuat"]}
-            dampak={["Menjadi Sales Consultant terbaik dalam beberapa bulan berturut turut dengan pencapaian omset dan quantity terbanyak."]} />
+            dampak={["Diakui sebagai Sales Consultant terbaik selama beberapa bulan berturut-turut, dengan pencapaian omset tertinggi dan volume penjualan terbesar."]} />
         </div>
       </section>
 
-      <section className="text-center mt-10">
-        <p className="text-gray-600/50 text-sm">Dibuat oleh Saya Sendiri</p>
+      {/* Skills Section */}
+      <section className="mt-12">
+        <Title name="Tools and Technology" />
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
+          <IconSkill name="Typescript" icon={<SiTypescript />} style="hover:text-[#3178c6]" />
+          <IconSkill name="Rust" icon={<SiRust />} style="hover:text-[#b7410e]" />
+          <IconSkill name="C" icon={<SiC />} style="hover:text-[#045c9b]" />
+          <IconSkill name="Python" icon={<SiPython />} style="hover:text-[#ffde53]" />
+          <IconSkill name="NodeJS" icon={<SiNodedotjs />} style="hover:text-[#44883e]" />
+          <IconSkill name="AWS" icon={<FaAws />} style="hover:text-[#ff9900]" />
+          <IconSkill name="Docker" icon={<SiDocker />} style="hover:text-[#0db7ed]" />
+          <IconSkill name="PostgreSQL" icon={<SiPostgresql />} style="hover:text-[#336791]" />
+          <IconSkill name="MongoDB" icon={<SiMongodb />} style="hover:text-[#589636]" />
+          <IconSkill name="Redis" icon={<SiRedis />} style="hover:text-[#D82C20]" />
+          <IconSkill name="RabbitMQ" icon={<SiRabbitmq />} style="hover:text-[#ff6404]" />
+          <IconSkill name="NeoVim" icon={<SiNeovim />} style="hover:text-[#6ba951]" />
+        </div>
       </section>
     </div>
   );

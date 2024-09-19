@@ -4,13 +4,14 @@ import tokokeramik from "@/public/tokokeramik.png";
 import programming from "@/public/survey-programming.png";
 import { SiTypescript, SiRust, SiC, SiPython, SiNeovim, SiDocker, SiPostgresql, SiMongodb, SiRedis, SiRabbitmq, SiNodedotjs } from "react-icons/si";
 import { Experience, IconSkill, Project, Title } from "@/components";
-import { FaAws } from "react-icons/fa6";
+import { FaAws, FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-4xl min-h-screen p-3 md:p-6">
       {/* Header Section */}
-      <div className="text-center">
+      <section className="text-center">
         <Image
           src={profile}
           alt="Profile"
@@ -20,12 +21,32 @@ export default function Home() {
         />
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
         <p className="text-md md:text-lg lg:text-xl text-gray-600/85">Supervisor Operations And Technology</p>
-      </div>
 
-      <div className="mt-12">
+        <div className="mt-4 flex justify-center items-center space-x-4">
+          <Link href="https://github.com/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+            <FaGithub size={28} />
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700">
+            <FaLinkedin size={28} />
+          </Link>
+
+          <Link
+            href="https://toko-keramik-assets.s3.ap-southeast-1.amazonaws.com/updated-cv.pdf"
+            target="_blank"
+            className="flex items-center space-x-2 px-4 py-2 border border-gray-600/50 rounded hover:border-gray-600"
+          >
+            <FaFilePdf />
+            <span>Download CV</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* Header Section */}
+      <section className="mt-12">
         <Title name="About" />
         <p className="text-gray-600/85 prose md:prose-lg lg:prose-xl">Saya memiliki pengalaman dalam pengembangan perangkat lunak dan manajemen operasional. Menguasai beberapa teknologi, saya telah memimpin tim untuk mencapai tujuan perusahaan. Saya juga membantu lebih dari 40 toko keramik di Indonesia memasarkan produk secara online dan meningkatkan omset. Dengan keahlian dalam negosiasi, saya mampu menjadi Sales Consultant terbaik beberapa bulan berturut-turut.</p>
-      </div>
+      </section>
 
       {/* Projects Section */}
       <section className="mt-12">

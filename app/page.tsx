@@ -4,7 +4,7 @@ import tokokeramik from "@/public/tokokeramik.png";
 import programming from "@/public/survey-programming.png";
 import { SiTypescript, SiRust, SiC, SiPython, SiNeovim, SiDocker, SiPostgresql, SiMongodb, SiRedis, SiRabbitmq, SiNodedotjs } from "react-icons/si";
 import { Experience, IconSkill, Project, Title } from "@/components";
-import { FaAws, FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaAws, FaFilePdf, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,13 +22,17 @@ export default function Home() {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
         <p className="text-md md:text-lg lg:text-xl text-gray-600/85">Supervisor Operations And Technology</p>
 
-        <div className="mt-4 flex justify-center items-center space-x-4">
+        <div className="mt-4 flex justify-center items-center space-x-5">
           <Link href="https://github.com/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
             <FaGithub size={28} />
           </Link>
 
           <Link href="https://www.linkedin.com/in/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700">
             <FaLinkedin size={28} />
+          </Link>
+
+          <Link href="https://www.youtube.com/@sarrahman_dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700">
+            <FaYoutube size={28} />
           </Link>
 
           <Link

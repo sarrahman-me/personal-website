@@ -116,6 +116,15 @@ export default function Home() {
             description="Saya bertanggung jawab dalam penjualan keramik dan granit langsung kepada pelanggan, dengan menerapkan strategi penjualan yang efektif dan berfokus pada kepuasan pelanggan."
             keterampilan={["Negosiasi", "Komunikasi", "Pemahaman produk yang sangat kuat"]}
             dampak={["Diakui sebagai Sales Consultant terbaik selama beberapa bulan berturut-turut, dengan pencapaian omset tertinggi dan volume penjualan terbesar.", "Membuat beberapa teknologi yang memudahkan dalam opersional dan penjualan"]} />
+          <Experience
+            role="Guru Bahasa Arab"
+            companyName="Pondok Pesantren Al Imam"
+            startYear="2017"
+            endYear="2018"
+            description="Saya mengajar bahasa arab dan menjadi wali kelas 1 SMA"
+            keterampilan={["Nahwu", "Sorof", "D. Lughoh"]}
+            dampak={["Memberikan materi bahasa arab yang sesuai dengan materi standar"]} />
+
         </div>
       </section>
 

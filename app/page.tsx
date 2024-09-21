@@ -2,6 +2,10 @@ import Image from "next/image";
 import profile from "@/public/profile.jpeg";
 import tokokeramik from "@/public/tokokeramik.png";
 import programming from "@/public/survey-programming.png";
+import awsCloud from "@/public/certi-aws-cloud.jpg";
+import restfull from "@/public/certi-restapi.png";
+import hackerank from "@/public/certi-hackerank.jpg";
+import fullstack from "@/public/certi-fullstack.png";
 import { SiTypescript, SiRust, SiC, SiPython, SiNeovim, SiDocker, SiPostgresql, SiMongodb, SiRedis, SiRabbitmq, SiNodedotjs } from "react-icons/si";
 import { Experience, IconSkill, Project, Title } from "@/components";
 import { FaAws, FaFilePdf, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
@@ -20,7 +24,7 @@ export default function Home() {
           height={150}
         />
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
-        <p className="text-md md:text-lg lg:text-xl text-gray-600/85">Supervisor Operations And Technology</p>
+        <p className="text-md md:text-lg lg:text-xl text-gray-600/85">Junior Programmer</p>
 
         <div className="mt-4 flex justify-center items-center space-x-5">
           <Link href="https://github.com/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
@@ -144,6 +148,23 @@ export default function Home() {
           <IconSkill name="Redis" icon={<SiRedis />} style="hover:text-[#D82C20]" />
           <IconSkill name="RabbitMQ" icon={<SiRabbitmq />} style="hover:text-[#ff6404]" />
           <IconSkill name="NeoVim" icon={<SiNeovim />} style="hover:text-[#6ba951]" />
+        </div>
+      </section>
+
+      {/* Certification Section */}
+      <section className="mt-12">
+        <Title name="Licenses and certifications" />
+        <div className="grid grid-cols-2 md:grid-cols-4 place-items-center gap-2">
+          <Image src={hackerank} alt="hackerank" width="200" height="200" />
+          <Link href="https://www.linkedin.com/learning/certificates/df3ec3558b9b2a54f28f12e2d3067e6688fcacbbfe6ee60e398c733753e97bc2" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700">
+            <Image src={fullstack} alt="fullstack" width="200" height="200" />
+          </Link>
+          <Link href="https://www.linkedin.com/learning/certificates/0a6032d3763ad555dfbc31558966ee2f714a877802d6e808a33767619f31fe69" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700">
+            <Image src={restfull} alt="restfull" width="200" height="200" />
+          </Link>
+          <Link href="https://www.dicoding.com/certificates/ERZRGLQ5NPYV" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700">
+            <Image src={awsCloud} alt="awsCloud" width="200" height="200" />
+          </Link>
         </div>
       </section>
 

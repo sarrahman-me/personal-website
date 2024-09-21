@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-4xl min-h-screen p-3 md:p-6">
+    <div className="mx-auto max-w-5xl min-h-screen p-3 md:p-6">
       {/* Header Section */}
       <section className="text-center">
         <Image

@@ -6,7 +6,7 @@ import awsCloud from "@/public/certi-aws-cloud.jpg";
 import restfull from "@/public/certi-restapi.png";
 import hackerank from "@/public/certi-hackerank.jpg";
 import fullstack from "@/public/certi-fullstack.png";
-import { SiTypescript, SiRust, SiC, SiPython, SiNeovim, SiDocker, SiPostgresql, SiMongodb, SiRedis, SiRabbitmq, SiNodedotjs } from "react-icons/si";
+import { SiTypescript, SiRust, SiC, SiPython, SiNeovim, SiDocker, SiPostgresql, SiMongodb, SiRedis, SiRabbitmq, SiNodedotjs, SiWakatime } from "react-icons/si";
 import { Experience, IconSkill, Project, Title } from "@/components";
 import { FaAws, FaFilePdf, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import Link from "next/link";
@@ -28,21 +28,25 @@ export default function Home() {
 
         <div className="mt-4 flex justify-center items-center space-x-5">
           <Link href="https://github.com/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
-            <FaGithub size={28} />
+            <FaGithub title="Github" size={28} />
           </Link>
 
           <Link href="https://www.linkedin.com/in/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700">
-            <FaLinkedin size={28} />
+            <FaLinkedin title="Linkedin" size={28} />
           </Link>
 
           <Link href="https://www.youtube.com/@sarrahman_dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700">
-            <FaYoutube size={28} />
+            <FaYoutube title="Youtube" size={28} />
+          </Link>
+
+          <Link href="https://wakatime.com/@sarrahman" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+            <SiWakatime title="Wakatime" size={28} />
           </Link>
 
           <Link
             href="https://toko-keramik-assets.s3.ap-southeast-1.amazonaws.com/updated-cv.pdf"
             target="_blank"
-            className="flex items-center space-x-2 px-4 py-2 border border-gray-600/50 rounded hover:border-gray-600"
+            className="select-none flex items-center space-x-2 px-4 py-2 border border-gray-600/50 rounded hover:border-gray-600"
           >
             <FaFilePdf />
             <span>Download CV</span>

@@ -20,9 +20,9 @@ export default function Education({ schollName, startYear, endYear, description,
         <p className="text-gray-600/75">{startYear} - {endYear}</p>
         <p className="text-gray-600/85 prose mb-1">{description}</p>
       </div>
-      <div className="mt-2 prose">
+      <div className="mt-2">
         <h4 className="text-gray-600 font-medium">Organisasi dan Prestasi :</h4>
-        <ul className="mt-2 list-disc list-inside text-gray-600/85 space-y-1">
+        <ul className="mt-2 ml-3 prose list-disc list-inside text-gray-600/85 space-y-1">
           {
             prestasi.map((v) => (
               <li key={v}>{v}</li>

@@ -191,7 +191,7 @@ export default function Home() {
       <section className="flex justify-center mt-12">
         <blockquote className="p-6 bg-white rounded-lg border-l-8 border-primary-600 shadow-md max-w-2xl">
           <p className="text-xl italic text-gray-800 leading-relaxed">
-            "Kejar dulu skillnya jangan uangnya, kalau kamu kuasai skillnya, mau kamu dibuang dimanapun kamu pasti tetap hidup."
+            &quot;Kejar dulu skillnya jangan uangnya, kalau kamu kuasai skillnya, mau kamu dibuang dimanapun kamu pasti tetap hidup.&quot;
           </p>
           <p className="mt-4 text-right text-lg font-semibold text-gray-700">
             - Rahman

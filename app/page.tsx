@@ -7,7 +7,7 @@ import restfull from "@/public/certi-restapi.png";
 import hackerank from "@/public/certi-hackerank.jpg";
 import fullstack from "@/public/certi-fullstack.png";
 import { SiTypescript, SiRust, SiC, SiPython, SiNeovim, SiDocker, SiPostgresql, SiMongodb, SiRedis, SiRabbitmq, SiNodedotjs, SiWakatime } from "react-icons/si";
-import { Experience, IconSkill, Project, Title } from "@/components";
+import { Education, Experience, IconSkill, Project, Title } from "@/components";
 import { FaAws, FaFilePdf, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -94,6 +94,22 @@ export default function Home() {
             "Database: Supabase"
           ]}
           dampak={[]} />
+      </section>
+
+      {/* Educations Section */}
+      <section className="mt-12">
+        <Title name="Education" />
+        <Education
+          schollName="Pondok Modern Darussalam Gontor"
+          startYear="2012"
+          endYear="2018"
+          description="Selama enam tahun di Pondok Modern Darussalam Gontor, saya mendapatkan pendidikan yang holistik, menggabungkan kurikulum agama dan akademik. Pengalaman ini membentuk karakter saya dengan penekanan pada disiplin, kemandirian, dan kemampuan berpikir kritis. Gontor tidak hanya mengajarkan ilmu, tetapi juga nilai-nilai kepemimpinan yang kuat dan kebiasaan hidup mandiri."
+          prestasi={[
+            "Terpilih menjadi kader sejak kelas 4 (setara 1 SMA) untuk menjadi bendahara koperasi dengan perputaran dana hingga 2 milyar per tahun",
+            "Sangat aktif dalam pramuka dan menjadi salah satu Pasus (Pasukan Khusus) 5",
+            "Menjadi ketua konsulat kalimantan yang mengatur kelancaran perjalan santri yang berasal dari kalimantan"
+          ]}
+        />
       </section>
 
       {/* Experience Section */}

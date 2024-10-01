@@ -1,6 +1,7 @@
+import Education from "./education";
 import Experience from "./experience";
 import IconSkill from "./iconSkill";
 import Project from "./project";
 import Title from "./title";
 
-export { IconSkill, Title, Experience, Project };
+export { IconSkill, Title, Experience, Project, Education };

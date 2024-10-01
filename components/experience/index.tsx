@@ -15,7 +15,7 @@ export default function Experience({ companyName, role, startYear, endYear, desc
         <h3 className="text-xl font-semibold text-gray-600">{role} | {companyName}</h3>
         <p className="text-gray-600/75">{startYear} - {endYear}</p>
         <p className="text-gray-600/85 mb-1">{description}</p>
-        <div>
+        <div className="mt-2">
           <h4 className="text-gray-600 font-medium">Keterampilan:</h4>
           <ul className="mt-2 list-disc list-inside text-gray-600/85 space-y-1">
             {

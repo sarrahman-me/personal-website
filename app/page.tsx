@@ -103,7 +103,7 @@ export default function Home() {
           schollName="Pondok Modern Darussalam Gontor"
           startYear="2012"
           endYear="2018"
-          description="Selama enam tahun di Pondok Modern Darussalam Gontor, saya mendapatkan pendidikan yang holistik, menggabungkan kurikulum agama dan akademik. Pengalaman ini membentuk karakter saya dengan penekanan pada disiplin, kemandirian, dan kemampuan berpikir kritis. Gontor tidak hanya mengajarkan ilmu, tetapi juga nilai-nilai kepemimpinan yang kuat dan kebiasaan hidup mandiri."
+          description="Saya menjalani pendidikan yang holistik, menggabungkan kurikulum agama dan akademik. Pengalaman ini membentuk karakter saya dengan penekanan pada disiplin, kemandirian, dan kemampuan berpikir kritis. Gontor tidak hanya mengajarkan ilmu, tetapi juga nilai-nilai kepemimpinan yang kuat dan kebiasaan hidup mandiri."
           prestasi={[
             "Terpilih menjadi kader sejak kelas 4 (setara 1 SMA) untuk menjadi bendahara koperasi dengan perputaran dana hingga 2 milyar per tahun",
             "Sangat aktif dalam pramuka dan menjadi salah satu Pasus (Pasukan Khusus) 5",

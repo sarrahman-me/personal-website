@@ -18,9 +18,9 @@ export default function Education({ schollName, startYear, endYear, description,
       <div className="relative space-y-1">
         <h3 className="text-xl font-semibold text-gray-600">{schollName}</h3>
         <p className="text-gray-600/75">{startYear} - {endYear}</p>
-        <p className="text-gray-600/85 mb-1">{description}</p>
+        <p className="text-gray-600/85 prose mb-1">{description}</p>
       </div>
-      <div className="mt-2">
+      <div className="mt-2 prose">
         <h4 className="text-gray-600 font-medium">Organisasi dan Prestasi :</h4>
         <ul className="mt-2 list-disc list-inside text-gray-600/85 space-y-1">
           {

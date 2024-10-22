@@ -44,7 +44,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="https://toko-keramik-assets.s3.ap-southeast-1.amazonaws.com/updated-cv.pdf"
+            href="https://sarrahman.s3.ap-southeast-1.amazonaws.com/updated-cv.pdf"
             target="_blank"
             className="select-none flex items-center space-x-2 px-4 py-2 border border-gray-600/50 rounded hover:border-gray-600"
           >

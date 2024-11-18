@@ -80,7 +80,7 @@ export default function Home() {
             "Berkontribusi untuk industri bahan bangunan yang lebih baik"]} />
       </section>
 
-      <section className="mt-12">
+{/*       <section className="mt-12">
         <Title name="Fun Projects" />
         <Project
           title="Survey Bahasa Pemrograman"
@@ -95,7 +95,7 @@ export default function Home() {
           ]}
           dampak={[]} />
       </section>
-
+ */}
       {/* Educations Section */}
       <section className="mt-12">
         <Title name="Education" />

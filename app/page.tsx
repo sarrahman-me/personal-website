@@ -65,7 +65,7 @@ export default function Home() {
         <Title name="Impactful Projects" />
         <Project
           title="Toko Keramik Indonesia"
-          href="https://www.tokokeramik.com"
+          href="https://main.dtusqppnb0kst.amplifyapp.com/"
           imageSrc={tokokeramik}
           description="
           Tokokeramik Indonesia adalah sebuah platform yang memudahkan pemilik toko keramik untuk menjual barang secara online dan semuanya gratis. Saya membuat keseluruhan sistem tokokeramik.com dan saya bertanggung jawab atas pengembangan, logika bisnis dan aplikasi, dan pemeliharaan keseluruhan situs menggunakan berbagai teknologi."

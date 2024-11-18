@@ -1,7 +1,6 @@
 import Image from "next/image";
 import profile from "@/public/profile.jpeg";
 import tokokeramik from "@/public/tokokeramik.png";
-import programming from "@/public/survey-programming.png";
 import awsCloud from "@/public/certi-aws-cloud.jpg";
 import restfull from "@/public/certi-restapi.png";
 import hackerank from "@/public/certi-hackerank.jpg";
@@ -80,7 +79,7 @@ export default function Home() {
             "Berkontribusi untuk industri bahan bangunan yang lebih baik"]} />
       </section>
 
-{/*       <section className="mt-12">
+      {/*       <section className="mt-12">
         <Title name="Fun Projects" />
         <Project
           title="Survey Bahasa Pemrograman"

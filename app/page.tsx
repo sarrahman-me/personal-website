@@ -23,7 +23,6 @@ export default function Home() {
           height={150}
         />
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-600">Muhammad Nur Rahman</h1>
-        <p className="text-md md:text-lg lg:text-xl text-gray-600/85">Junior Programmer</p>
 
         <div className="mt-4 flex justify-center items-center space-x-5">
           <Link href="https://github.com/sarrahman-me" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
